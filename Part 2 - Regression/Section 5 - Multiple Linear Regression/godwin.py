@@ -1,15 +1,16 @@
-# Data Preprocessing
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  7 17:56:04 2017
 
-# Importing the libraries
+@author: godwin
+"""
+
+#importing Libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-#import datasets
-dataset = pd.read_csv('Data.csv')
+# importing the datasets
+dataset = pd.read_csv("50_Startups.csv")
 X = dataset.iloc[:,:-1].values
-Y = dataset.iloc[:,3].values
-
-from sklearn.preprocessing import Imputer
-
-imputer = Imputer
+Y = dataset.iloc[:,1].values
